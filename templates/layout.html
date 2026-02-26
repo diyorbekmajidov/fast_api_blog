@@ -173,7 +173,6 @@
         const themeText = { light: '🌝 Light', dark: '🌚 Dark', auto: '🌗 Auto' };
         document.getElementById('bd-theme-text').textContent = themeText[theme];
       };
-
       // Set theme on click
       document.querySelectorAll('[data-bs-theme-value]').forEach(button => {
         button.addEventListener('click', () => setTheme(button.getAttribute('data-bs-theme-value')));
